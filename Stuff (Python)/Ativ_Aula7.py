@@ -12,7 +12,7 @@ def adiciona_info():
     })
 
     with open("informacoes", 'a', uncode="utf-8") as f:
-        json.dumps(info, f)
+        json.dump(info, f)
 
 
 
