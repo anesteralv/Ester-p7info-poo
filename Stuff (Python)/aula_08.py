@@ -30,5 +30,14 @@ class triangulo:
         area = (base*altura)/2
         print(area)
 
+x = triangulo(int(input("Digite o valor da base: ")), int(input("Digite o valor da altura: ")))
 
-x = triangulo(int(input("Digite o valor da base>")), int(input("Digite o valor da altura:")))
+class Pai:
+    Nome = 'Carlos'
+    Sobrenome = 'Oliveira'
+    Residência = "Filha Solteira"
+
+class Filha(Pai):
+    Nome = "Luciana"
+    Olhos = 'castanho'
+    

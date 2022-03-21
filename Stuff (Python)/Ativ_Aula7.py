@@ -11,9 +11,7 @@ def adiciona_info():
         'email': email,
     })
 
-    with open("informacoes", 'a', uncode="utf-8") as f:
+    with open("informacoes", 'w', encoding="utf-8") as f:
         json.dump(info, f)
-
-
 
 adiciona_info()
