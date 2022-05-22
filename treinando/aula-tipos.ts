@@ -35,3 +35,14 @@ const n: string[] = ["Ester", "Matheus"]
 let amor = (n[0] + " ama " + n[1])
 
 console.log(amor)
+
+//tipos de funções
+
+function soma() {
+    let a: number = prompt("Digite o número 1: ")
+    let b: number = prompt("Digite o número 1: ")
+    console.log(a + b)
+
+}
+
+soma()
