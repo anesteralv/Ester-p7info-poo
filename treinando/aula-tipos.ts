@@ -18,7 +18,7 @@ console.log(firstName.toUpperCase())
 
 let lastName: string = "Alves"
 
-let fullName: string = (firstName + "" + lastName);
+let fullName: string = (firstName + " " + lastName);
 
 console.log(fullName)
 
@@ -38,11 +38,18 @@ console.log(amor)
 
 //tipos de funções
 
-function soma() {
-    let a: number = prompt("Digite o número 1: ")
-    let b: number = prompt("Digite o número 1: ")
+function soma(a: number, b: number) {
     console.log(a + b)
 
 }
 
-soma()
+soma(6, 7)
+
+
+// retorno 
+
+function greeting(name:string) {
+    return `Olá, ${name}`
+}
+
+console.log(greeting("Ester"))

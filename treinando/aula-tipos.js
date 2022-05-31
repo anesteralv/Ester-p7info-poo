@@ -7,7 +7,7 @@ console.log(y.toPrecision(3));
 var firstName = "Ester";
 console.log(firstName.toUpperCase());
 var lastName = "Alves";
-var fullName = (firstName + "" + lastName);
+var fullName = (firstName + " " + lastName);
 console.log(fullName);
 //////array
 var i = [1, 2, 3];
@@ -17,9 +17,12 @@ var n = ["Ester", "Matheus"];
 var amor = (n[0] + " ama " + n[1]);
 console.log(amor);
 //tipos de funções
-function soma() {
-    var a = prompt("Digite o número 1: ");
-    var b = prompt("Digite o número 1: ");
+function soma(a, b) {
     console.log(a + b);
 }
-soma();
+soma(6, 7);
+// retorno 
+function greeting(name) {
+    return "Ol\u00E1 ".concat(name);
+}
+console.log(greeting("Ester"));
