@@ -32,9 +32,11 @@ var itnf1 = new item_nota_fiscal_1.ItemNotaFiscal(1, 1, 10, p1);
 var itnf2 = new item_nota_fiscal_1.ItemNotaFiscal(2, 2, 10, p2);
 var itnf3 = new item_nota_fiscal_1.ItemNotaFiscal(3, 3, 10, p3);
 var intf = [];
+intf.push(itnf1.getquantidade);
+intf.push(itnf2.getquantidade);
+intf.push(itnf3.getquantidade);
 for (var i = 0; i <= 3; i++) {
-    var total = p[i] * intf[i];
-    console.log(p);
+    var total1 = p[i] * intf[i];
 }
 itnf1.valorItemNotaFiscal();
 itnf2.valorItemNotaFiscal();
@@ -50,3 +52,5 @@ nf.adicionarItem(itnf3);
 console.log("=========================");
 console.log(nf);
 console.log("=========================");
+nf.calcularValorNotaFiscal();
+nf.imprimirNotaFiscal();
